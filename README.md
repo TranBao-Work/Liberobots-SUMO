@@ -113,12 +113,6 @@ Ví dụ: Nếu đối thủ ở rất gần phía trước, khoảng cách `dis
 
 ---
 
-## 🤝 Đóng góp
-
-Mọi đóng góp đều được hoan nghênh! Nếu bạn có ý tưởng cải tiến hoặc tìm thấy lỗi, đừng ngần ngại tạo một Issue hoặc Pull Request.
-
----
-
 ## 📧 Liên hệ
 
 Nếu bạn có bất kỳ câu hỏi nào về dự án này, vui lòng liên hệ:
