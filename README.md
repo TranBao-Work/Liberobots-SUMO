@@ -77,7 +77,8 @@ Bạn có thể tải xuống mã nguồn dự án này hoặc sao chép trực 
     * **Nút Select:** Kích hoạt chế độ tự động.
     * **Nút Cross (X):** Bật/tắt chế độ phanh.
     * **Nút Square/Triangle/Circle:** Điều chỉnh tốc độ robot.
-# `Lưu ý robot-sumo hoạt động ở sàn đen viền trắng, nếu bạn ngược lại chỉ cần đảo điều kiện của cảm biến hồng ngoại`
+    
+    `Lưu ý robot-sumo hoạt động ở sàn đen viền trắng, nếu bạn ngược lại chỉ cần đảo điều kiện của cảm biến hồng ngoại`
 ---
 
 ## 🧠 Thuật toán dò tìm đối thủ: Thuật toán Trung bình có trọng số (Weighted Average)
@@ -99,7 +100,7 @@ Ví dụ: Nếu đối thủ ở rất gần phía trước, khoảng cách `dis
 ## ⚡ Bức tốc giai đoạn khởi động (đối với khu vực sumo)
 * Với ý tưởng này khi nhận được lệnh bắt đầu thì robot sẽ lập tức xoay trái hoặc phải 45 độ theo lệnh người điều khiển và tiến lên thu hẹp khoảng cách dò tìm đối thủ qua đó tấn công sớm hơn.
 
-## 'Bên cạnh thuật toán tốt và chuẩn thì cần có một chiếc robot khoẻ với tính toán trọng tâm, độ ma sát và khối lượng robot kĩ lưỡng sẽ tạo ưu thế cho robot trên sàn sumo hơn'
+   `Bên cạnh thuật toán tốt và chuẩn thì cần có một chiếc robot khoẻ với tính toán trọng tâm, độ ma sát và khối lượng robot kĩ lưỡng sẽ tạo ưu thế cho robot trên sàn sumo hơn`
 
 ---
 
