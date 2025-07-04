@@ -118,6 +118,6 @@ Mọi đóng góp đều được hoan nghênh! Nếu bạn có ý tưởng cả
 Nếu bạn có bất kỳ câu hỏi nào về dự án này, vui lòng liên hệ:
 
 * **Trịnh Trần Quốc Bảo** - baotrinh20052006@gmail.com
-![](https://img.icons8.com/?size=100&id=8808&format=png&color=000000)[**Linked của tôi**](https://www.linkedin.com/in/b%E1%BA%A3o-tr%E1%BB%8Bnh-ute-48674031b/)
+* **Linked của tôi** - ![Linkedin](https://www.linkedin.com/in/b%E1%BA%A3o-tr%E1%BB%8Bnh-ute-48674031b/)
 
 ---
