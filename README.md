@@ -90,7 +90,7 @@ Trong hàm `computeTargetAngle()`, robot sử dụng một biến thể của th
 
 Công thức tính toán:   
 
-![Công thức trung bình trọng số](https://latex.codecogs.com/png.image?\LARGE&space;\dpi{110}\bg{white}&space;Angle_{target}=\frac{\sum(Angle_i/Distance_i)}{\sum(1/Distance_i)})
+![Công thức trung bình trọng số](https://latex.codecogs.com/png.image?\large&space;\dpi{100}\bg{white}&space;Angle_{target}=\frac{\sum(Angle_i/Distance_i)}{\sum(1/Distance_i)})
 
 Ví dụ: Nếu đối thủ ở rất gần phía trước, khoảng cách `distFront` sẽ nhỏ, làm cho trọng số `1.0/distFront` rất lớn, và $Angle_{target}$ sẽ tiến gần về 0 độ (tức là đi thẳng).
 
