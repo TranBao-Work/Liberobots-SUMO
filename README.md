@@ -88,8 +88,9 @@ Trong hàm `computeTargetAngle()`, robot sử dụng một biến thể của th
     * Phải: `45 độ`
 * **Trọng số** cho mỗi cảm biến được tính bằng **nghịch đảo khoảng cách** đến đối thủ (`1.0 / dist`). Điều này có nghĩa là khi đối thủ càng gần, trọng số của cảm biến đó càng lớn, và góc tương ứng sẽ có ảnh hưởng mạnh mẽ hơn đến góc tấn công cuối cùng.
 
-Công thức tính toán:
-![Công thức trung bình trọng số](https://latex.codecogs.com/svg.image?\LARGE&space;\bg{white}&space;Angle_{target}=\frac{\sum(Angle_i/Distance_i)}{\sum(1/Distance_i)})
+Công thức tính toán:   
+
+![Công thức trung bình trọng số](https://latex.codecogs.com/png.image?\LARGE&space;\dpi{110}\bg{white}&space;Angle_{target}=\frac{\sum(Angle_i/Distance_i)}{\sum(1/Distance_i)})
 
 Ví dụ: Nếu đối thủ ở rất gần phía trước, khoảng cách `distFront` sẽ nhỏ, làm cho trọng số `1.0/distFront` rất lớn, và $Angle_{target}$ sẽ tiến gần về 0 độ (tức là đi thẳng).
 
