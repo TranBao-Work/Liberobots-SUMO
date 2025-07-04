@@ -31,9 +31,10 @@ Dự án **Liberobot-SUMO** là một robot sumo tự hành được phát tri�
 * **Ngôn ngữ lập trình:** C++ (cho Arduino IDE)
 * **Thư viện điều khiển Bluetooth:** `DabbleESP32.h`, `GamePadModule.h` (từ thư viện Dabble)
 * **Cảm biến:**
-    * Cảm biến siêu âm (HC-SR04)
-    * Cảm biến hồng ngoại (IR sensors)
-* **Động cơ:** Động cơ DC có điều khiển PWM
+    * Cảm biến siêu âm (US-015)
+    * Cảm biến hồng ngoại (LM393)
+* **Động cơ:** Động cơ DC có điều khiển PWM (4 motor GA25)
+* **Motor Shield** BTS7960 (2 cái cho xe 4 bánh)
 * **Môi trường phát triển:** Arduino IDE
 
 ---
@@ -45,7 +46,7 @@ Dự án **Liberobot-SUMO** là một robot sumo tự hành được phát tri�
 1.  **Phần cứng:**
     * Board ESP32
     * 2 động cơ DC (có bộ truyền động motor driver)
-    * 3 cảm biến siêu âm (HC-SR04)
+    * 3 cảm biến siêu âm (US-015)
     * 2 cảm biến hồng ngoại
     * Các dây nối và nguồn điện phù hợp.
 2.  **Phần mềm:**
@@ -69,16 +70,17 @@ Bạn có thể tải xuống mã nguồn dự án này hoặc sao chép trực 
 1.  Tải ứng dụng **Dabble** trên điện thoại thông minh (có sẵn trên Android và iOS).
 2.  Mở ứng dụng, tìm kiếm và kết nối với thiết bị Bluetooth có tên **"Liberobot-SUMO"**.
 3.  Trong ứng dụng Dabble, chọn Module **GamePad**.
-4.  Sử dụng các nút điều khiển để vận hành robot:
+4.  Robot sẽ có 2 chế độ hoạt động: **Điều khiển thủ công** và **Tự động** (Khi ở trên sàn Sumo)
+5.  Sử dụng các nút điều khiển để vận hành robot:
     * **Nút mũi tên (Up/Down/Left/Right):** Điều khiển robot trong chế độ thủ công.
     * **Nút Start:** Thoát khỏi chế độ tự động (chuyển sang thủ công).
     * **Nút Select:** Kích hoạt chế độ tự động.
     * **Nút Cross (X):** Bật/tắt chế độ phanh.
     * **Nút Square/Triangle/Circle:** Điều chỉnh tốc độ robot.
-
+# `Lưu ý robot-sumo hoạt động ở sàn đen viền trắng, nếu bạn ngược lại chỉ cần đảo điều kiện của cảm biến hồng ngoại`
 ---
 
-## 🧠 Thuật toán Trung bình có trọng số (Weighted Average)
+## 🧠 Thuật toán dò tìm đối thủ: Thuật toán Trung bình có trọng số (Weighted Average)
 
 Trong hàm `computeTargetAngle()`, robot sử dụng một biến thể của thuật toán trung bình có trọng số để xác định hướng tấn công tối ưu.
 
@@ -94,13 +96,18 @@ Công thức tính toán:
 
 Ví dụ: Nếu đối thủ ở rất gần phía trước, khoảng cách `distFront` sẽ nhỏ, làm cho trọng số `1.0/distFront` rất lớn, và $Angle_{target}$ sẽ tiến gần về 0 độ (tức là đi thẳng).
 
+## ⚡ Bức tốc giai đoạn khởi động (đối với khu vực sumo)
+* Với ý tưởng này khi nhận được lệnh bắt đầu thì robot sẽ lập tức xoay trái hoặc phải 45 độ theo lệnh người điều khiển và tiến lên thu hẹp khoảng cách dò tìm đối thủ qua đó tấn công sớm hơn.
+
+## 'Bên cạnh thuật toán tốt và chuẩn thì cần có một chiếc robot khoẻ với tính toán trọng tâm, độ ma sát và khối lượng robot kĩ lưỡng sẽ tạo ưu thế cho robot trên sàn sumo hơn'
+
 ---
 
 ## 📈 Tương lai phát triển
 
-* Cải thiện thuật toán tìm kiếm và tấn công (ví dụ: áp dụng PID control).
-* Thêm các chế độ hoạt động tự động khác.
+* Cải thiện thuật toán tìm kiếm và tấn công.
 * Tối ưu hóa hiệu suất và tiêu thụ năng lượng.
+* Tính toán trọng tâm chính xác.
 * Phát triển giao diện người dùng tùy chỉnh thay vì Dabble.
 
 ---
