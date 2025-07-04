@@ -92,9 +92,9 @@ Công thức tính toán:
 
 ![Công thức trung bình trọng số](https://latex.codecogs.com/png.image?\large&space;\dpi{100}\bg{white}&space;Angle_{target}=\frac{\sum(Angle_i/Distance_i)}{\sum(1/Distance_i)})
 
-Ví dụ: Nếu đối thủ ở rất gần phía trước, khoảng cách `distFront` sẽ nhỏ, làm cho trọng số 
+Ví dụ: Nếu đối thủ ở rất gần phía trước, khoảng cách `distFront` sẽ nhỏ, làm cho trọng số    
 ![](https://latex.codecogs.com/png.image?\inline&space;\LARGE&space;\dpi{100}\bg{white}\frac{1.0}{distFront}) 
- rất lớn, và $Angle_{target}$ sẽ tiến gần về 0 độ (tức là đi thẳng).
+    rất lớn, và $Angle_{target}$ sẽ tiến gần về 0 độ (tức là đi thẳng).
 
 ---
 
