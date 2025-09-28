@@ -118,6 +118,6 @@ Ví dụ: Nếu đối thủ ở rất gần phía trước, khoảng cách `dis
 Nếu bạn có bất kỳ câu hỏi nào về dự án này, vui lòng liên hệ:
 
 * **Trịnh Trần Quốc Bảo** - baotrinh20052006@gmail.com
-* **Linked của tôi** - ![Linkedin](https://www.linkedin.com/in/b%E1%BA%A3o-tr%E1%BB%8Bnh-ute-48674031b/)
+* **Linked của tôi** - ![Linkedin](https://www.linkedin.com/in/tr%E1%BB%8Bnh-tr%E1%BA%A7n-qu%E1%BB%91c-b%E1%BA%A3o-ute-48674031b/)
 
 ---
